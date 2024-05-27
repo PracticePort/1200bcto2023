@@ -1,0 +1,204 @@
+#table-container {
+  max-height: 400px; /* Adjust as needed */
+  overflow-y: auto;
+}
+.legend-icon i {
+  color: #0038b8; /* Change to the desired blue color */
+}
+#data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#data-table th,
+#data-table td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+.card-header h2 {
+  font-weight: bold;
+}
+
+.card .card-header p {
+  font-weight: bold; /* Bold font for the governing body name */
+}
+
+.card .description {
+  font-size: 0.3px; /* Adjust the font size for the description */
+}
+
+.card-header h2 .smaller-font {
+  font-size: 1.0rem; /* Adjust the font size as needed */
+  font-weight: normal; /* Remove boldness */
+  margin-left: 50px; /* Add left margin to create space */
+}
+
+.card-header .governing-body {
+  font-weight: normal;
+}
+
+.card.description {
+  font-size: 0.5rem; /* Adjust the font size as needed */
+}
+
+.card {
+  border: 1px solid #ccc; /* Add a border to each card */
+  border-radius: 8px; /* Optional: Add rounded corners for a more visually appealing look */
+  margin-bottom: 20px; /* Optional: Add some spacing between cards */
+  padding: 20px; /* Add padding around the content inside the card */
+  transition: box-shadow 0.9s ease, color 0.6s ease; /* Add transition effect for shadow and color */
+}
+
+.card:hover {
+  background-color: #ffffff; /* Change to the desired highlight color */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.card:hover .card-header h2,
+.card:hover .card-header p {
+  color: #0038b8; /* Change to the desired text color */
+}
+
+body {
+  position: relative; /* Ensure the body is relatively positioned */
+}
+
+h1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #0038b8; /* Example background color */
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 5.1); /* Optional box shadow for a subtle effect */
+  z-index: 1000; /* Ensure the header is above other content */
+}
+
+#filter-dropdown {
+  position: fixed;
+  top: 32px; /* Adjust as needed to position the filter below the header */
+  right: 15px;
+  background-color: #ffffff; /* Example background color */
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional box shadow for a subtle effect */
+  z-index: 1000; /* Ensure the filter is above other content */
+  border-radius: 30px;
+}
+
+#card-container {
+  margin-top: 20px; /* Adjust as needed to prevent overlap with h1 */
+}
+
+#header-container {
+  position: relative; /* Ensure the container is relatively positioned */
+}
+
+#legend {
+  position: absolute; /* Position the legend absolutely within the header container */
+  top: 100%; /* Position it just below the header */
+  left: 0; /* Align it to the left side of the container */
+  background-color: #f9f9f9; /* Optional: Add a background color */
+  padding: 10px; /* Optional: Add some padding */
+  border: 1px solid #ddd; /* Optional: Add a border */
+  border-top: none; /* Remove top border to align with the header */
+  z-index: 1; /* Ensure the legend appears above other elements */
+}
+.card:hover {
+  background-color: #ffffff; /* Change to the desired highlight color */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.card:hover .card-header h2,
+.card:hover .card-header p,
+.card:hover .icon-container span {
+  color: #0038b8; /* Change to the desired text color */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Add shadow effect to text */
+}
+
+
+#intro-container {
+  margin-top: 115px; /* Add spacing between the intro container and the top of the page */
+}
+
+
+#header-container {
+  margin-top: 5px; /* Add spacing between the header container and the intro container */
+}
+
+#legend {
+  /* Remove previous positioning styles */
+  position: static;
+  top: auto;
+  left: auto;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.legend-item {
+  margin-bottom: 10px; /* Add spacing between legend items */
+}
+
+/* Style for legend */
+#legend {
+  margin-top: 10px; /* Adjust as needed */
+}
+
+.legend-item {
+  margin-bottom: 5px; /* Add some bottom margin between each legend item */
+}
+
+.legend-icon {
+  margin-right: 10px; /* Add some right margin between icon and text */
+}
+
+.icon-container {
+  margin-top: 10px; /* Add some top margin to separate from other card content */
+}
+
+.icon-container span {
+  margin-right: 5px; /* Add some right margin between each icon */
+}
+
+.icon-container span:hover::before {
+  content: attr(data-tooltip); /* Display the tooltip text */
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  top: -30px; /* Position the tooltip above the icon */
+  left: 50%; /* Center the tooltip horizontally */
+  transform: translateX(-50%);
+}
+.card:hover .icon-container span {
+  color: #0038b8; /* Change to the desired color */
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* Hide header and filter */
+  #header-container {
+    display: none;
+  }
+
+  /* Adjust card layout */
+  #card-container {
+    margin-top: 20px; /* Adjust as needed */
+  }
+
+  .card-header h2 {
+    font-size: 1.2rem; /* Adjust font size for card headers */
+  }
+
+  .description {
+    font-size: 1rem; /* Adjust font size for descriptions */
+  }
+
+  .icon-container {
+    font-size: 1.5rem; /* Adjust icon size for better visibility on smaller screens */
+  }
+}

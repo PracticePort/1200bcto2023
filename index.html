@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Dynamic List with Description</title>
+  <link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <script src="papaparse.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/Draggable.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+</head>
+
+
+<div id="intro-container">
+  <p style="color: #0038b8; text-shadow: .5px .5px 1px #000000;"><strong>Expulsions 1200 BC - 2023 AD</strong></p>
+  <p> Number of unique places: 882
+    Number of unique governing bodies: 336. A filter positioned in the upper right-hand corner highlights the top 45 regions, according to current borders, where repeated expulsions occured.</p><p>Additional visuals can be found <a href =''></a>. The original dataset including dictionary of terms can be found on <a href='https://github.com/PracticePort/BareMinimumEE-EE'>GitHub</a>.</p>
+</div>
+
+<div id="header-container">
+  <div id="header-content">
+    <h1 style="color: white; text-shadow: 2px 2px 4px #000000;">Expulsions 1200 BC - 2023 AD</h1>
+    <!-- Legend -->
+    <div id="legend">
+      <div class="legend-item">
+        <span class="legend-icon"><i class="fas fa-skull-crossbones"></i></span> Violent
+      </div>
+      <div class="legend-item">
+        <span class="legend-icon"><i class="fas fa-medal"></i></span> Symbolic
+      </div>
+      <div class="legend-item">
+        <span class="legend-icon"><i class="fas fa-poo-storm"></i></span> Jews Identified as Threatening
+      </div>
+      <div class="legend-item">
+        <span class="legend-icon"><i class="fas fa-users"></i></span> Attempted Inclusion
+      </div>
+      <div class="legend-item">
+        <span class="legend-icon"><i class="fas fa-list-ol"></i></span> More expulsions around this zone than provided in this list
+      </div>
+    </div>
+  </div>
+  <!-- Filter dropdown menu -->
+  <select id="filter-dropdown">
+    <!-- Options will be populated dynamically by JavaScript -->
+  </select>
+</div>
+
+<!-- Container for expulsions -->
+<div id="expulsions-container"></div>
+
+<!-- Container for cards -->
+<div id="card-container"></div>
+
+<!-- Include any other scripts here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+<script src="script.js"></script>
+<!-- partial -->
+  <script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/Draggable.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  fetch('https://raw.githubusercontent.com/PracticePort/BareMinimumEE-EE/main/The%20Bare%20Minimum%20-%20Second%20Pass%20Expelling%20Events%20(3).csv')
+  fetch('https://raw.githubusercontent.com/PracticePort/BareMinimumEE-EE/main/The%20Bare%20Minimum%20-%20Expelling%20Events%20(1).csv')
     .then(response => {
       if (!response.ok) {
         throw new Error('Failed to fetch CSV');
